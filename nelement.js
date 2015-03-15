@@ -1,9 +1,19 @@
-nextElement("#con_banco_DC","#con_banco_cuenta",2);
 
-    function nextElement(prev,next,lenght){
-        $(document).on('keyup', prev, function (e) {
-            if($(prev).val().length==lenght){
-                $(next).focus();
-            }
-        });
-    }
+$(document).ready(function() {
+	$(".nelement").focus(function(){
+		var next = "#" + $(this).data("next");
+		var length = $(this).data("length");
+		if(!length){
+			length = $(this).attr('maxLength');
+		}
+		nextElement(this, next, length);
+	});
+});
+
+function nextElement(prev,next,length){
+    $(document).on('keyup', prev, function (e) {
+        if($(prev).val().length==length){
+            $(next).focus();
+        }
+    });
+}
