@@ -1,10 +1,17 @@
 <html>
 <head>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="nelement.js"></script>
+	<script type="text/javascript" src="./js/nelement.min.js"></script>
+
+	<style type="text/css" src="./css/style.css"></style>
 </head>
 
 <body>
-	<input id="input1" type="text" class="nelement" data-next="input2"  maxlength="4"> <input id="input2" type="text" class="nelement" data-next="input1" data-length="2">
+	<h1>Nelement<h1>
+	<h3>Passes to the next item without tab</h3>
+	<input type="text" class="nelement" maxlength="4" size="4"> 
+	<input type="text" class="nelement" data-next="input3" maxlength="8">
+	<input id="input3" type="text" class="nelement" data-length="4"> 
+	<input type="text" value="END (without Nelement)">
 </body>
 </html>
