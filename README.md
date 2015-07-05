@@ -1,6 +1,6 @@
 # Nelement 0.6
 
-Passes to the next item without tab, only when N keydowns (determine by length).
+Focus to the next item without tab, only when N keydowns (determine by length).
 
 ## Requirements
 
